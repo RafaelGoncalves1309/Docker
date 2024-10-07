@@ -1,0 +1,11 @@
+docker build -t container-hello:latest .
+
+docker tag container-hello:latest asobra/container-hello:latest
+
+docker logout
+
+docker login
+
+docker push asobra/container-hello:latest
+
+docker run asobra/container-hello
